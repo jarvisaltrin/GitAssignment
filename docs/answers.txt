@@ -1,0 +1,12 @@
+a) 3
+b) Date:   Thu Sep 15 10:29:34 2016 -0400
+c) BasicWeapon.java - 1
+   RoleGame.java - 1
+   Sword.java - 2
+   Weapon.java - 1
+   WeaponFactory.java - 1
+d) Git status command displays the state of current working directory and the staging area.It shows us which files are being staged, which aren't and those that aren't tracked.
+Git log command on the otherhand lists out the changes made in the repository, i.e. it lists out the entire commit history.
+e) git log RoleGame.java
+f) git log --grep="file"
+g) git log --author="Alice" --after="09/01/2016" --before="09/16/2016"
