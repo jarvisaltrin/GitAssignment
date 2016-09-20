@@ -7,7 +7,7 @@ package edu.fsu.cs.cen5035;
 
 /**
  *
- * @author Javier
+ * @author Jarvis
  */
 public class WeaponFactory {
 
@@ -15,6 +15,12 @@ public class WeaponFactory {
         switch (type) {
             case "sword":
                 return new Sword();
+            case "arrow":
+            	return new Arrow();
+            case "axe":
+            	return new Axe();
+            case "magicstaff":
+            	return new MagicStaff();
             default:
                 throw new IllegalArgumentException("Invalid type");
         }
