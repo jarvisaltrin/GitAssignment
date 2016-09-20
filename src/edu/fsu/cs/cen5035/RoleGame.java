@@ -7,7 +7,7 @@ package edu.fsu.cs.cen5035;
 
 /**
  *
- * @author Javier
+ * @author Jarvis
  */
 public class RoleGame {
 
@@ -17,7 +17,17 @@ public class RoleGame {
         int armor = 20;
         System.out.println("Swords was able to do " + sword.hit(armor) + " of damage due to an armor with "+armor+ " points.");
         
-        //TODO: Add the remainig weapons here
+        Weapon arrow = WeaponFactory.getWeapon("arrow");
+        System.out.println("Arrow has "+arrow.hit()+" of damage.");
+        System.out.println("Arrows was able to do " + arrow.hit(armor) + " of damage due to an armor with "+armor+ " points.");
+        
+        Weapon axe = WeaponFactory.getWeapon("axe");
+        System.out.println("Axe has "+axe.hit()+" of damage.");
+        System.out.println("Axe was able to do " + axe.hit(armor) + " of damage due to an armor with "+armor+ " points.");
+        
+        Weapon magicstaff = WeaponFactory.getWeapon("magicstaff");
+        System.out.println("Magic Staff has "+magicstaff.hit()+" of damage.");
+        System.out.println("Magic Staff was able to do " + magicstaff.hit(armor) + " of damage due to an armor with "+armor+ " points.");
 
     }
 }
